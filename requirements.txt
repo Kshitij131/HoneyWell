@@ -1,0 +1,9 @@
+pandas>=2.1.0
+numpy>=1.26.0
+faker>=22.0.0
+networkx>=3.2
+scikit-learn>=1.4.0
+torch>=2.1.0
+captum>=0.7.0
+streamlit>=1.30.0
+pytest>=8.0.0
