@@ -156,6 +156,3 @@ The platform computes and reports:
 - Vectorized NumPy/Pandas operations
 - No TODOs, placeholders, or pseudocode
 
-## License
-
-Proprietary. Internal use only.
