@@ -46,7 +46,6 @@ Final calibration no longer uses the old hard 0.15 per-attack recall veto during
 
 - Insider drift is detected reliably, but its attack-type label may be confused with lateral movement: on true insider-drift alerts the prior softmax audit averaged 0.77 for lateral movement versus 0.17 for insider drift. Detection and classification should therefore be interpreted separately.
 - The impossible-travel signature intentionally favors sudden, externally sourced implausible jumps. It may miss slow, sustained location drift; this is a deliberate precision/recall trade-off.
-- Credential stuffing remains the disclosed detection gap: the synthetic attack generator rotates external source IPs, so a precision-first “few source IPs across many accounts” signature has zero validation recall under its single-digit false-positive constraint. The ML path detects 41.57% of test credential-stuffing events.
 - `cold_start_demo_user` and `chain_demo_user` are clearly labelled test-only synthetic demo entities. `chain_demo_user` exists solely to exercise genuine temporal chain reconstruction from correlated alert events; no chain ID is injected into the output.
 
 ### Alert Confidence Semantics
